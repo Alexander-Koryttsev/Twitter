@@ -1,0 +1,39 @@
+PODS:
+  - Fabric (1.6.7)
+  - Kiwi (2.4.0)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
+  - Reachability (3.2)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - SVProgressHUD (2.0.3)
+  - TwitterCore (2.0.2):
+    - Fabric
+  - TwitterKit (2.0.2):
+    - TwitterCore (= 2.0.2)
+
+DEPENDENCIES:
+  - Kiwi (~> 2.4)
+  - MagicalRecord (~> 2.3)
+  - Reachability (~> 3.2)
+  - ReactiveCocoa (= 2.5)
+  - SVProgressHUD (~> 2.0)
+  - TwitterKit (~> 2.0)
+
+SPEC CHECKSUMS:
+  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
+  Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  TwitterCore: 0f44d8980a6879d5205dcb4e010d15e643e56fa0
+  TwitterKit: c4e40f289a3d7cc9fab9f241edd7502385468b65
+
+COCOAPODS: 0.39.0
