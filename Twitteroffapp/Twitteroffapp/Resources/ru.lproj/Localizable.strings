@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  Twitteroffapp
+
+  Created by Alexander Koryttsev on 4/13/16.
+  Copyright © 2016 Alexander Koryttsev. All rights reserved.
+*/
+
+//Common
+"ok" = "OK";
+"cancel" = "Отменить";
+"signOut" = "Выйти";
+
+//Start
+"special" = "Разработано специально для Techery";
+"hiMessage" = "Привет! Это Twitter клиент с режимом \"оффлайн\". Нажми кнопку внизу чтобы предоставить доступ к своему Twitter аккаунту.";
+"signInWithTwitter" = "Войти через Twitter";
+
+//Errors
+"error" = "Ошибка";
+"noInternetMessage" = "Отсутствует подключение к интернету";
