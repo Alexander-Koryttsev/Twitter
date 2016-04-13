@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  Twitteroffapp
+
+  Created by Alexander Koryttsev on 4/13/16.
+  Copyright © 2016 Alexander Koryttsev. All rights reserved.
+*/
+
+//Common
+"ok" = "OK";
+"cancel" = "Cancel";
+"signOut" = "Sign Out";
+
+//Start
+"special" = "Developed specially for Techery";
+"hiMessage" = "Hi! Here is a Twitter client with offline mode. Press the button below to provide access to the your Twitter account.";
+"signInWithTwitter" = "Sign In with Twitter";
+
+//Errors
+"error" = "Error";
+"noInternetMessage" = "The Internet connection appears to be offline";

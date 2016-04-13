@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15E65" minimumToolsVersion="Automatic">
+    <entity name="Tweet" representedClassName="TWTweet" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="inReplyToScreenName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inReplyToTweetID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inReplyToUserID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isLikedNumber" optional="YES" attributeType="Boolean" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="isLiked"/>
+            </userInfo>
+        </attribute>
+        <attribute name="isRetweetedNumber" optional="YES" attributeType="Boolean" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="isRetweeted"/>
+            </userInfo>
+        </attribute>
+        <attribute name="isRetweetNumber" optional="YES" attributeType="Boolean" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="isRetweet"/>
+            </userInfo>
+        </attribute>
+        <attribute name="languageCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="likeCountNumber" optional="YES" attributeType="Integer 64" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="likeCount"/>
+            </userInfo>
+        </attribute>
+        <attribute name="permalinkString" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="permalink"/>
+            </userInfo>
+        </attribute>
+        <attribute name="perspectivalUserID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="retweetCountNumber" optional="YES" attributeType="Integer 64" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="retweetCount"/>
+            </userInfo>
+        </attribute>
+        <attribute name="retweetID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tweetID" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="author" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="tweets" inverseEntity="User" syncable="YES"/>
+        <relationship name="retweetedTweet" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Tweet" inverseName="retweets" inverseEntity="Tweet" syncable="YES"/>
+        <relationship name="retweets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tweet" inverseName="retweetedTweet" inverseEntity="Tweet" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="TWUser" syncable="YES">
+        <attribute name="formattedScreenName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isProtectedNumber" optional="YES" attributeType="Boolean" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="isProtected"/>
+            </userInfo>
+        </attribute>
+        <attribute name="isVerifiedNumber" optional="YES" attributeType="Boolean" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="isVerified"/>
+            </userInfo>
+        </attribute>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profileImageLargeURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profileImageMiniURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profileImageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profileURLString" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="profileURL"/>
+            </userInfo>
+        </attribute>
+        <attribute name="screenName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="tweets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tweet" inverseName="author" inverseEntity="Tweet" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Tweet" positionX="-63" positionY="-18" width="128" height="315"/>
+        <element name="User" positionX="-243" positionY="-18" width="128" height="210"/>
+    </elements>
+</model>

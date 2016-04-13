@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aED-Ju-Wgn">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="8NU-aD-9tA">
+            <objects>
+                <navigationController id="aED-Ju-Wgn" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oe1-Sm-lwX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.33333333333333331" green="0.67450980392156867" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Czu-wv-gmI" kind="relationship" relationship="rootViewController" id="6wX-4q-wIC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HEY-rF-2bn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-40" y="324"/>
+        </scene>
+        <!--Twitteroffapp-->
+        <scene sceneID="tDA-cA-e8n">
+            <objects>
+                <viewController id="Czu-wv-gmI" customClass="TWStartVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oe4-2u-ymd"/>
+                        <viewControllerLayoutGuide type="bottom" id="AaT-po-XCx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2JV-yo-iYR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twiteroffapp_logo" translatesAutoresizingMaskIntoConstraints="NO" id="kgL-iK-7Lr">
+                                <rect key="frame" x="105" y="185" width="110" height="110"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed specially for Techery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yl8-K6-HEw">
+                                <rect key="frame" x="57" y="447" width="206.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KG-dN-HRk" customClass="TWButton">
+                                <rect key="frame" x="40" y="393" width="240" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="mPe-un-Qw9"/>
+                                </constraints>
+                                <color key="tintColor" red="0.33333333329999998" green="0.67450980390000004" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="imageEdgeInsets" minX="-24" minY="0.0" maxX="24" maxY="0.0"/>
+                                <state key="normal" title="Sign In with Twitter" image="Twitter_logo"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Hi! Here is a Twitter client with offline mode. Press the button below to provide access to the your Twitter account." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Log-qC-dqJ">
+                                <rect key="frame" x="30" y="295" width="260" height="81.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="8KG-dN-HRk" secondAttribute="trailing" constant="24" id="0Yl-Pp-pDz"/>
+                            <constraint firstItem="Log-qC-dqJ" firstAttribute="leading" secondItem="2JV-yo-iYR" secondAttribute="leading" constant="30" id="2ga-Af-cnP"/>
+                            <constraint firstItem="kgL-iK-7Lr" firstAttribute="centerY" secondItem="2JV-yo-iYR" secondAttribute="centerY" id="Q6O-7f-KVS"/>
+                            <constraint firstItem="Log-qC-dqJ" firstAttribute="top" secondItem="2JV-yo-iYR" secondAttribute="centerY" priority="250" id="Q7n-cI-iG8"/>
+                            <constraint firstItem="Yl8-K6-HEw" firstAttribute="top" secondItem="8KG-dN-HRk" secondAttribute="bottom" constant="16" id="Wig-SP-g7f"/>
+                            <constraint firstItem="Yl8-K6-HEw" firstAttribute="centerX" secondItem="2JV-yo-iYR" secondAttribute="centerX" id="Ych-7P-DrA"/>
+                            <constraint firstItem="Log-qC-dqJ" firstAttribute="top" secondItem="kgL-iK-7Lr" secondAttribute="bottom" id="j9G-E0-plG"/>
+                            <constraint firstItem="8KG-dN-HRk" firstAttribute="leading" secondItem="2JV-yo-iYR" secondAttribute="leadingMargin" constant="24" id="k7M-KM-anE"/>
+                            <constraint firstItem="kgL-iK-7Lr" firstAttribute="centerX" secondItem="2JV-yo-iYR" secondAttribute="centerX" id="ndx-lE-3J9"/>
+                            <constraint firstAttribute="trailing" secondItem="Log-qC-dqJ" secondAttribute="trailing" constant="30" id="q6m-Ri-6QL"/>
+                            <constraint firstItem="AaT-po-XCx" firstAttribute="top" secondItem="Yl8-K6-HEw" secondAttribute="bottom" constant="16" id="y9M-JY-8Jm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Twitteroffapp" id="1FH-fj-ZBJ"/>
+                    <connections>
+                        <outlet property="developedForLabel" destination="Yl8-K6-HEw" id="lP1-YS-W6h"/>
+                        <outlet property="hiLabel" destination="Log-qC-dqJ" id="jI1-Ew-7ok"/>
+                        <outlet property="hiLabelConstraintTopSpace" destination="j9G-E0-plG" id="q5v-Fa-Tf4"/>
+                        <outlet property="logo" destination="kgL-iK-7Lr" id="fNH-dB-YSx"/>
+                        <outlet property="logoConstraintCenterY" destination="Q6O-7f-KVS" id="t2f-cS-PPy"/>
+                        <outlet property="signInButton" destination="8KG-dN-HRk" id="wZB-eG-aeE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LXT-0X-4C8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="331" y="324"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Twitter_logo" width="30" height="24"/>
+        <image name="twiteroffapp_logo" width="110" height="110"/>
+    </resources>
+</document>
